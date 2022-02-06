@@ -1,11 +1,17 @@
 // SPDX-FileCopyrightText: © 2021 Phillip Trudeau-Tavara <pmttavara@protonmail.com>
 // SPDX-License-Identifier: 0BSD
 
-// Happenlance AutoSplitter v1.01e
-// Works for Happenlance v1.01e and into the future (until I break it).
-// You can try to write one for the older chances but, best of luck tbh.
+// Happenlance AutoSplitter v1.02a
+// Works for Happenlance v1.02a and into the future (until I break it).
+// You can try to write one for the older versions but, best of luck tbh.
 // Basically public domain (zero-clause BSD license). License at bottom of file.
 
+state("Happenlance", "1.02a") {
+    ulong ticks : 0x0;
+    ulong level : 0x0;
+    ulong checkpoint : 0x0;
+    ulong killed_final_boss : 0x0;
+}
 state("Happenlance", "1.01e") {
     ulong ticks : 0x0;
     ulong level : 0x0;
@@ -45,7 +51,7 @@ split {
 
 // Zero-Clause BSD (0BSD)
 // 
-// Copyright (c) 2021, Phillip Trudeau-Tavara
+// Copyright (c) 2021-2022, Phillip Trudeau-Tavara
 // All rights reserved.
 // 
 // Permission to use, copy, modify, and/or distribute this software
