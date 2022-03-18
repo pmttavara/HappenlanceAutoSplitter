@@ -44,7 +44,7 @@ start { return current.ticks > old.ticks; }
 reset { return current.ticks < old.ticks; }
 split {
     if (settings["split_on_level"] && current.level != 0xffffffff && current.level != old.level) return true;
-    if (settings["split_on_checkpoint"] && current.checkpoint != 0xffff && current.checkpoint != old.checkpoint) return true;
+    if (settings["split_on_checkpoint"] && current.checkpoint != old.checkpoint) return true;
     if (settings["split_on_killed_final_boss"] && current.killed_final_boss > old.killed_final_boss) return true;
     return false;
 }
